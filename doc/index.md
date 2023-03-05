@@ -2,10 +2,11 @@
 
 The geometry nodes implement a hair cage technique which simulates growing hair from your base mesh to a cage surrounding the model.  The setup can be a little intricate.
 
-I've also created this video explaining the setup process.
+I've also created this video explaining the setup process:
 
-{% include youtube.html id="H0v0s3FiI_U" %}
-https://youtu.be/H0v0s3FiI_U
+[![Video demonstrating use of assets]
+(https://img.youtube.com/vi/H0v0s3FiI_U/maxresdefault.jpg)]
+(https://www.youtube.com/watch?v=H0v0s3FiI_U)
 
 ## Installation
 
