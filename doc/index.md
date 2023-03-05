@@ -4,13 +4,16 @@ The geometry nodes implement a hair cage technique which simulates growing hair 
 
 I've also created this video explaining the setup process.
 
+{% include youtube.html id="H0v0s3FiI_U" %}
+https://youtu.be/H0v0s3FiI_U
+
 ## Installation
 
 * Create a new file folder on your system that you will use for storing the Blender assets.
 * Download the furTools-hairCage.blend, furTuft_256x256.png and suzanne-furry-albedo.png and put them in the folder you created.
 * Open Blender's Preferences window (select Edit > Preferences from the main toolbar) and select the File Paths tab.
 * Under the Asset Libraries section, click the button with the + symbol.  Browse to the directory where you downloaded the files, select it and click Add Asset Library
-* Change the name of the library to Fur Tools.  The assets will now listend under that name in Blender's Asset Library.
+* Change the name of the library to Fur Tools.  The assets will now listed under that name in Blender's Asset Library.
 
 ![Asset Browser Window](assetBrowserWindow.png)
 
