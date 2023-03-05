@@ -4,9 +4,7 @@ The geometry nodes implement a hair cage technique which simulates growing hair 
 
 I've also created this video explaining the setup process:
 
-[![Video demonstrating use of assets]
-(https://img.youtube.com/vi/H0v0s3FiI_U/maxresdefault.jpg)]
-(https://www.youtube.com/watch?v=H0v0s3FiI_U)
+[![Video demonstrating usage](https://img.youtube.com/vi/H0v0s3FiI_U/0.jpg)](https://www.youtube.com/watch?v=H0v0s3FiI_U)
 
 ## Installation
 
