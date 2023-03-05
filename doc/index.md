@@ -23,13 +23,22 @@ I've also created this video explaining the setup process.
         * Select all the vertices in the mesh and press Alt-S to scale along the normals.  
         * Move your mouse slightly to make the Cage mesh slightly larger than the original.
     * In the properties editor, go into the Object Properties tab and go to the Viewport Display section.  Under Display As, select Wire.  Now your cage will appear as a wireframe object surrounding your base object.
-* Switch to the geometry nodes tab.  This will automatically add a Geometry Nodes modifier to your mesh.
+
+![Creating fur cage](creatingFurCage.png)
+    
+* Switch to the geometry nodes tab.
+    * Click on the New button to create an empty Geometry Nodes network
 * Open an Asset Browser window.  (If you have not installed the assets using the assets yet, you will need to do that first).  
     * Navigate to the Fur Tools section.  
     * Drag and drop the furShader node onto your mesh.
     * Drag and drop the FurCardsWithCage node into the Geometry Nodes work area
+
+![Creating geometry nodes](creatingGeomNodes.png)
+
     * From the dropdown in the work area, select the FurCardsWithCage option to replace your geometry node network with the FurCardsWithCage network
 
+![Changing to node network](changingToNodeNetwork.png)
+    
 ## Setting up the Geometry Node modifier
     
 In the Properties panel and click on the Modifiers tab.  You're going to need to do some setup to link up the network with your meshes and the shader
@@ -56,16 +65,24 @@ There are other attributes which can use used to change the appearance of the fu
 * Fur Card Facets - The number of faces to have for each hair card
 * Cutoff Length - When fur strand starts from a spot too close to a boundary on a UV map, it can cause errors with some fur stands being made far too long.  This parameter gets around that by discarding any hairs that are longer than this length.
 
+![Filling in parameters](fillingInParameters.png)
+
+
 ## Exporting to a game engine
 
 Finally, when you're you're happy with your fur, there are a few things you need to do to export it.  Since many exporters in Blender don't support geometry nodes well yet, we need to 'bake' our changes to an export mesh.
 * First, I'd recommend making a duplicate of your fur mesh.  Name it FurExport (You don't have to do this step, but if you want to go back and make changes later, you can't do it with the baked mesh)
 * In object mode, right click and select Convert To > Mesh
+
+![Converrting to mesh](convertingToMesh.png)
+
 * In Blender 3.4, you will need to so some extra work to export the UVs correctly
     * Select your FurExport mesh and click on the Object Data Properties tab in the properties window.
     * Scroll down to the Attributes window
     * Scroll down to find the entry named furUv
     * Click the button on the right side with the downward pointing arrow.  Click on Convert Attribute
     * Change Mode to UV Map and click OK
+
+![Convert attributes](convertAttributeMenu.png)
 
 At this point, your mesh should be ready to export.
